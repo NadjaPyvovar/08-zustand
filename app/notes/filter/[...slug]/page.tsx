@@ -7,6 +7,7 @@ import {
 } from '@tanstack/react-query';
 import { fetchNotes } from '@/lib/api';
 import Notes from './Notes.client';
+import { BASE_URL } from "@/lib/constants";
 
 const PER_PAGE = 12;
 
@@ -24,7 +25,7 @@ export async function generateMetadata({
   const description = tag
     ? `Browse all NoteHub notes filtered by the "${tag}" tag.`
     : 'Browse all of your notes in NoteHub.';
-  const url = `https://notehub.com/notes/filter/${encodeURIComponent(tag ?? 'all')}`;
+  const url = `${BASE_URL}/notes/filter/${tag ?? "all"}`;
 
   return {
     title,

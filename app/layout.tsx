@@ -6,6 +6,7 @@ import './globals.css';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import TanStackProvider from '@/components/TanStackProvider/TanStackProvider';
+import { BASE_URL } from "@/lib/constants";
 
 // loading the Roboto font globally:
 const roboto = Roboto({
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'NoteHub',
     description: 'Manage your personal notes with NoteHub',
-    url: 'https://notehub.com/',
+    url: `${BASE_URL}/`,
     images: [ogImage],
   },
 };

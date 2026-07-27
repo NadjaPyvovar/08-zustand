@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ogImage } from '@/lib/metadata';
 import css from './not-found.module.css';
+import { BASE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: '404 - Page not found | NoteHub',
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '404 - Page not found | NoteHub',
     description: 'Sorry, the page you are looking for does not exist.',
-    url: 'https://notehub.com/',
+    url: `${BASE_URL}/`,
     images: [ogImage],
   },
 };

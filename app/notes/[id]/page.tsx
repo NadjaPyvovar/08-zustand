@@ -7,6 +7,7 @@ import {
 } from '@tanstack/react-query';
 import { fetchNoteById } from '@/lib/api';
 import NoteDetails from './NoteDetails.client';
+import { BASE_URL } from "@/lib/constants";
 
 interface NoteDetailsPageProps {
   params: Promise<{ id: string }>;
@@ -29,7 +30,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${note.title} | NoteHub`,
       description,
-      url: `https://notehub.com/notes/${id}`,
+      url: `${BASE_URL}/notes/${id}`,
       images: [ogImage],
     },
   };

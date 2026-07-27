@@ -1,0 +1,1 @@
+export const BASE_URL = "https://08-zustand-wheat-one.vercel.app";

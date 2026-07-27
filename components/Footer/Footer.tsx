@@ -1,4 +1,4 @@
-import css from "./Footer.module.css";
+import css from './Footer.module.css';
 
 export default function Footer() {
   return (
@@ -8,8 +8,7 @@ export default function Footer() {
         <div className={css.wrap}>
           <p>Developer: Admin NoteHub</p>
           <p>
-            Contact us:{" "}
-            <a href="mailto:admin@notehub.app">admin@notehub.app</a>
+            Contact us: <a href="mailto:admin@notehub.app">admin@notehub.app</a>
           </p>
         </div>
       </div>

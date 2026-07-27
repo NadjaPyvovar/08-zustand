@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import ReactPaginate from "react-paginate";
-import css from "./Pagination.module.css";
+import ReactPaginate from 'react-paginate';
+import css from './Pagination.module.css';
 
 interface PaginationProps {
   pageCount: number;
@@ -28,5 +28,4 @@ export default function Pagination({
   );
 }
 
-
-// note: switched to simple import for ReactPaginate 
+// note: switched to simple import for ReactPaginate

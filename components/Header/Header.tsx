@@ -1,5 +1,5 @@
-import Link from "next/link";
-import css from "./Header.module.css";
+import Link from 'next/link';
+import css from './Header.module.css';
 
 export default function Header() {
   return (
@@ -22,4 +22,3 @@ export default function Header() {
 }
 
 // note: updating the Link, since /notes (the notes' list) does not exist any longer as a route => living now under /notes/filter/[...slug]
-
